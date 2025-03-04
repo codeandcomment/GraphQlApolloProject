@@ -15,7 +15,7 @@ app.use(cors())
 
 
 app.get("/",(req:Request,res:Response)=>{
-    return res.json({"ststus":200, "message": "App is up"})
+    return res.json({"status":200, "message": "App is up"})
 })
 
 const startApolloServer = async()=>{

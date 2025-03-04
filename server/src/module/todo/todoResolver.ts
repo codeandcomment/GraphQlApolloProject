@@ -6,7 +6,7 @@ const todoResolver = {
           return  await prisma.todo.findMany({orderBy:{id: "desc"}})
         },
 
-        getTodo:async(__dirname,{id})=>{
+        getTodo:async(_,{id})=>{
             return await prisma.todo.findUnique({where:{id:id}})
 
         }

@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.get("/", (req, res) => {
-    return res.json({ "ststus": 200, "message": "App is up" });
+    return res.json({ "status": 200, "message": "App is up" });
 });
 const startApolloServer = async () => {
     await appoloServer.start();
